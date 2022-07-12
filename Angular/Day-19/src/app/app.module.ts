@@ -5,6 +5,12 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { MainComponent } from './main/main.component';
+import {FooterComponent} from './footer/footer.component';
+import { CardComponent } from './card/card.component';
+import { HomeComponent } from './Github/home/home.component';
+import { SearchComponent } from './Github/search/search.component';
+import { ProfileComponent } from './Github/profile/profile.component';
+import { DetailsComponent } from './Github/details/details.component';
 
 
 @NgModule({
@@ -12,7 +18,12 @@ import { MainComponent } from './main/main.component';
     AppComponent,
     HeaderComponent,
     MainComponent,
-   
+    FooterComponent,
+    CardComponent,
+    HomeComponent,
+    SearchComponent,
+    ProfileComponent,
+    DetailsComponent
   ],
   imports: [
     BrowserModule,
