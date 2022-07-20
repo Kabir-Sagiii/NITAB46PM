@@ -7,6 +7,11 @@ import {Component} from '@angular/core'
  })
   export class FooterComponent {
 
+      show:string = 'angular'
+     name:string = ''
+     email:string = ''
+     phone:number =0
+     gender:string = ''
       brand:string = 'Apple'
 
   }
