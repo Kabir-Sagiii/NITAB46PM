@@ -9,6 +9,7 @@ export class NgforfetchComponent implements OnInit {
 
   constructor() { }
 Users:any = []
+MainUsers:any =[]
 showUser:boolean = false
 
   getUsersData(){
@@ -18,10 +19,12 @@ showUser:boolean = false
        }).then((d)=>{
              console.log(d)
              this.Users = d.results
+             this.MainUsers = d.results
              this.showUser = true
        })
   }
 
+  
   ngOnInit(): void {
   }
 
