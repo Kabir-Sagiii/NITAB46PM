@@ -1,0 +1,78 @@
+<div class="container mt-5">
+  <div class="row">
+    <div class="col bg-primary p-3">
+      <div class="btn-toolbar">
+        <div class="btn-group">
+          <button
+            class="btn btn-outline-primary"
+            (click)="changeProductValue('basic')"
+          >
+            Basic Details
+          </button>
+          <button
+            class="btn btn-outline-primary"
+            (click)="changeProductValue('preview')"
+          >
+            Preview
+          </button>
+          <button
+            class="btn btn-outline-primary"
+            (click)="changeProductValue('description')"
+          >
+            Description
+          </button>
+          <button
+            class="btn btn-outline-primary"
+            (click)="changeProductValue('rating')"
+          >
+            Rating
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row mt-5">
+    <div class="col-6">
+      <div id="productContainer" [ngSwitch]="productValue">
+        <div id="basic" *ngSwitchCase="'basic'">
+          <dl>
+            <dt>Product Id</dt>
+            <dd>{{ productDetails.id }}</dd>
+            <dt>Product Name</dt>
+            <dd>{{ productDetails.title }}</dd>
+            <dt>Product Price</dt>
+            <dd>{{ productDetails.price | currency }}</dd>
+            <dt>Product Category</dt>
+            <dd>{{ productDetails.category }}</dd>
+          </dl>
+        </div>
+
+        <div id="Preview" *ngSwitchCase="'preview'">
+          <dl>
+            <dt>Product Image</dt>
+            <dd>
+              <img [src]="productDetails.image" width="300px" height="300px" />
+            </dd>
+          </dl>
+        </div>
+
+        <div id="Description" *ngSwitchCase="'description'">
+          <dl>
+            <dt>Product Description</dt>
+            <dd>{{ productDetails.description }}</dd>
+          </dl>
+        </div>
+
+        <div id="rating" *ngSwitchCase="'rating'">
+          <dl>
+            <dt>No of Users Rated The Product</dt>
+            <dd>{{ productDetails.rating.count }}</dd>
+            <dt>Product Rating</dt>
+            <dd>{{ productDetails.rating.rate }}</dd>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

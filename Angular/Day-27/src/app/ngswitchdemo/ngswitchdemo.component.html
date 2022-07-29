@@ -1,0 +1,78 @@
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-12 box p-5">
+      <div class="row">
+        <div class="col-6">
+          <select class="form-control" (change)="changeTech($event)">
+            <option value="default">Select Technology</option>
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option>Javascript</option>
+            <option>Angular</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="row mt-5">
+        <div class="col" [ngSwitch]="techName">
+          <div id="default" *ngSwitchCase="'default'">
+            <h2>Technology</h2>
+            <img
+              src="https://cdn3.iconfinder.com/data/icons/abstract-1/512/no_image-512.png"
+              height="100px"
+              width="100px"
+            />
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Laudantium labore sint odit odio? Consequatur rem recusandae
+              dolores, perspiciatis facere illum vero rerum? Reprehenderit a
+              rerum aperiam officia ipsa culpa minima ratione ipsam vitae nulla.
+              Ad sed, culpa optio unde consequatur voluptate sunt quia dolorem
+              odit modi minima recusandae placeat sint temporibus, consectetur
+              velit! Repellat perferendis eos, at inventore ducimus sit, itaque
+              facere unde et expedita officia. Harum laudantium fugit earum?
+            </p>
+          </div>
+
+          <div id="html" *ngSwitchCase="'html'">
+            <h2>HTML</h2>
+            <img
+              src="https://www.clipartkey.com/mpngs/m/210-2104705_html-logo-png-transparent-background.png"
+              height="100px"
+              width="100px"
+            />
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Laudantium labore sint odit odio? Consequatur rem recusandae
+              dolores, perspiciatis facere illum vero rerum? Reprehenderit a
+              rerum aperiam officia ipsa culpa minima ratione ipsam vitae nulla.
+              Ad sed, culpa optio unde consequatur voluptate sunt quia dolorem
+              odit modi minima recusandae placeat sint temporibus, consectetur
+              velit! Repellat perferendis eos, at inventore ducimus sit, itaque
+              facere unde et expedita officia. Harum laudantium fugit earum?
+            </p>
+          </div>
+
+          <div id="css" *ngSwitchCase="'css'">
+            <h2>CSS</h2>
+            <img
+              src="https://th.bing.com/th/id/OIP.NccvSu6Gut1HXGwUTBKYKgHaH3?pid=ImgDet&rs=1"
+              height="100px"
+              width="100px"
+            />
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Laudantium labore sint odit odio? Consequatur rem recusandae
+              dolores, perspiciatis facere illum vero rerum? Reprehenderit a
+              rerum aperiam officia ipsa culpa minima ratione ipsam vitae nulla.
+              Ad sed, culpa optio unde consequatur voluptate sunt quia dolorem
+              odit modi minima recusandae placeat sint temporibus, consectetur
+              velit! Repellat perferendis eos, at inventore ducimus sit, itaque
+              facere unde et expedita officia. Harum laudantium fugit earum?
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
