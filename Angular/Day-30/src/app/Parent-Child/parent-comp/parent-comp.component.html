@@ -1,0 +1,32 @@
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-6">
+      <div class="card box">
+        <div class="card-header bg-success text-white">
+          <h4>Parent Component</h4>
+          <p class="lead">{{ childData }}</p>
+        </div>
+
+        <div class="card-body">
+          <div class="row">
+            <div class="col-8">
+              <input type="text" class="form-control" #input />
+            </div>
+            <div class="col-4">
+              <button class="btn btn-primary" (click)="sendDataToChild(input)">
+                Submit
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-footer">
+          <app-child-comp
+            [parentData]="data"
+            (newEvent)="getDataFromChild($event)"
+          ></app-child-comp>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
