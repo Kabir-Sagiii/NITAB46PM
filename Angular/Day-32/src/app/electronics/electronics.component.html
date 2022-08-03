@@ -1,0 +1,26 @@
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <h3>Electronic Products</h3>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea tempora
+        quod sequi neque placeat numquam omnis, ab non earum rerum dolores
+        dignissimos laborum dolor nulla illum itaque ducimus architecto debitis.
+      </p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-4" *ngFor="let elec of electronicDetails">
+      <div class="card">
+        <div class="card-header">
+          <img [src]="elec.image" width="100%" height="200px" />
+        </div>
+        <div class="card-body">
+          <p>{{ elec.title }}</p>
+          <h4>{{ elec.price | currency }}</h4>
+          <button class="btn btn-outline-success">Product Details</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

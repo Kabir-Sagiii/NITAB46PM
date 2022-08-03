@@ -1,0 +1,23 @@
+<div class="card">
+  <div class="card-header bg-warning text-white">
+    <h4>Client Component</h4>
+  </div>
+
+  <div class="card-body">
+    <div class="row">
+      <div class="col-8">
+        <input type="text" class="form-control" #input />
+      </div>
+
+      <div class="col-4">
+        <button class="btn px-5 btn-primary" (click)="getData(input)">
+          Send
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="card-footer">
+    <p class="lead">We are Expecting Server Message</p>
+  </div>
+</div>

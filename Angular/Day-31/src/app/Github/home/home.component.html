@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <app-search (customEvent)="getDataFromSearchComp($event)"></app-search>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-4">
+      <app-profile [userData]="userGithubData"></app-profile>
+    </div>
+
+    <div class="col-8">
+      <app-details [userData]="userGithubData"></app-details>
+    </div>
+  </div>
+</div>
