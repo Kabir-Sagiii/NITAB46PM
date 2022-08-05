@@ -1,7 +1,7 @@
 <div class="container">
   <div class="row">
     <div class="col">
-      <h3>Electronic Products</h3>
+      <h3>Jewelary Products</h3>
       <p>
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea tempora
         quod sequi neque placeat numquam omnis, ab non earum rerum dolores
@@ -10,17 +10,15 @@
     </div>
   </div>
   <div class="row">
-    <div class="col-4" *ngFor="let elec of electronicDetails">
+    <div class="col-4" *ngFor="let jew of jewelaryDetails">
       <div class="card">
         <div class="card-header">
-          <img [src]="elec.image" width="100%" height="200px" />
+          <img [src]="jew.image" width="100%" height="200px" />
         </div>
         <div class="card-body">
-          <p>{{ elec.title }}</p>
-          <h4>{{ elec.price | currency }}</h4>
-          <a routerLink="/detail/{{ elec.id }}" class="btn btn-outline-success"
-            >Product Details</a
-          >
+          <p>{{ jew.title }}</p>
+          <h4>{{ jew.price | currency }}</h4>
+          <button class="btn btn-outline-success">Product Details</button>
         </div>
       </div>
     </div>

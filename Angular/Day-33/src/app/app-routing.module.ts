@@ -10,6 +10,7 @@ import { ProductsComponent } from './products/products.component';
 import { ElectronicsComponent } from './electronics/electronics.component';
 import { JewelaryComponent } from './jewelary/jewelary.component';
 import { FooterComponent } from './footer/footer.component';
+import { ProductdetailsComponent } from './productdetails/productdetails.component';
 
 const routes: Routes = [
   {
@@ -24,10 +25,10 @@ const routes: Routes = [
     path:'switch',
     component:NgswitchfetchComponent
   },
-  {
-    path:'detail/:id',
-    component:FooterComponent
-  },
+     {
+      path:'details/:id',
+      component:ProductdetailsComponent
+     },
   {
     path:'products',
     component:ProductsComponent,

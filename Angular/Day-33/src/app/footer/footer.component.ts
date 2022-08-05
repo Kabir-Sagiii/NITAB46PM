@@ -28,7 +28,6 @@ import {ActivatedRoute} from '@angular/router'
        }
      ngOnInit(): void {
        alert(this.activedRoute.snapshot.paramMap.get('id'))
-       
   }
 
    
