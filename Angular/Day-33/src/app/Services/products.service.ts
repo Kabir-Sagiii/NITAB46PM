@@ -7,9 +7,17 @@ export class ProductsService {
 res:any 
 data:any
        
-   async  getProductInfo(api:string){
-    this.res   = await fetch(api)
-     this.data=    await this.res.json()
+  //  async  getProductInfo(api:string):Promise<any>{
+  //   this.res   = await fetch(api)
+  //    this.data=    await this.res.json()
+  //    return this.data
+    
+     
+
+  //    }
+  getProductInfo(api:string):any{
+    return fetch(api)
+   
     
      
 

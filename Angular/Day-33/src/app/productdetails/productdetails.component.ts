@@ -17,6 +17,7 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./productdetails.component.css']
 })
 export class ProductdetailsComponent implements OnInit {
+  res:any
   productData:productData = {
        id:0,
        price:0,
@@ -28,11 +29,12 @@ export class ProductdetailsComponent implements OnInit {
 
   constructor(private products:ProductsService,private activateRoute:ActivatedRoute) { }
 
-     getDataFromService(id:any){
-       this.products.getProductInfo(`https://fakestoreapi.com/products/${id}`)
-       this.productData = this.products.data  
-       console.log("PD",this.productData)
-     }
+     async getDataFromService(id:any){
+     this.res=  await this.products.getProductInfo(`https://fakestoreapi.com/products/${id}`)
+      this.productData = await this.res.json()
+      console.log(this.productData)
+          
+    }
 
   ngOnInit(): void {
     
