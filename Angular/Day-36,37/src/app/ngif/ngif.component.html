@@ -1,0 +1,63 @@
+<div class="container mt-5 bg-secondary p-5">
+  <div class="bg-dark text-white p-5 mb-5" *ngIf="showDiv">
+    <h2>ngIF Directive</h2>
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste facilis ad
+      modi. Impedit alias nam deleniti perferendis sint rerum officiis,
+      molestiae, suscipit quia possimus delectus. Quidem provident nemo
+      incidunt, sequi aspernatur reprehenderit exercitationem autem dolorum
+      veritatis cum esse corrupti veniam.
+    </p>
+  </div>
+  <button class="btn btn-primary mx-3" (click)="addDiv()">Add Div</button>
+
+  <button class="btn btn-danger mx-3" (click)="removeDiv()">Remove Div</button>
+</div>
+
+<div class="container mt-5">
+  <div class="row my-3" *ngIf="show">
+    <div class="col">
+      <div class="card">
+        <div class="card-header bg-success text-white">
+          <h2>Angular</h2>
+        </div>
+        <div class="card-body">
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Repellendus, corrupti. Ex nemo eum reprehenderit neque, corrupti
+            alias veniam! Accusamus saepe molestiae vero amet dolorem nobis
+            adipisci, hic illum aspernatur maxime fuga ex quae cum! Animi quos
+            tempora ratione veniam aspernatur fugit quidem dolorum, beatae
+            ducimus corporis quasi saepe doloribus sit!
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row my-3" *ngIf="!show">
+    <div class="col">
+      <div class="card">
+        <div class="card-header bg-warning text-white">
+          <h2>React</h2>
+        </div>
+        <div class="card-body">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
+            odio quia molestiae voluptate, ea nesciunt, distinctio quos ipsum
+            est maiores soluta sed consectetur! Unde odit molestias quasi quidem
+            alias sequi dolores cupiditate, harum blanditiis aut veniam nemo
+            dolorum voluptates dignissimos facilis maiores nihil nisi quia eius
+            ad pariatur animi eligendi, optio non. Sit ex exercitationem illum
+            alias, facere saepe aliquid.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-2"><input type="radio" name="tech" checked />Angular</div>
+
+    <div class="col-2"><input type="radio" name="tech" />React</div>
+  </div>
+</div>

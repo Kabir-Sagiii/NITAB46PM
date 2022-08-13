@@ -1,0 +1,9 @@
+.darkMode {
+    color:white;
+    background-color: black;
+}
+
+.lightMode {
+    color:'black';
+    background-color: white;
+}

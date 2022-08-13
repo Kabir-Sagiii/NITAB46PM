@@ -1,0 +1,27 @@
+.box {
+    box-shadow: 0 0 10px red;
+}
+.font1 {
+    font-size:10px
+}
+.font2 {
+    font-size:20px
+}
+.font3 {
+    font-size: 40px;
+}
+.color1 {
+color:red
+}
+.color2 {
+    color:blue
+}
+.color3 {
+    color: green;
+}
+.valid {
+   border: 2px solid green;
+}
+.invalid {
+border: 2px solid red;
+}

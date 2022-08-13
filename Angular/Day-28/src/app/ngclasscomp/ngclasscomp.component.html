@@ -1,0 +1,32 @@
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-6">
+      <div
+        class="card"
+        [ngClass]="{ darkMode: switch.value, lightMode: !switch.value }"
+      >
+        <div class="card-header bg-dark text-white">
+          <h4>ngClass Directive</h4>
+          <div class="form-check form-switch">
+            <input
+              type="checkbox"
+              class="form-check-input"
+              ngModel
+              #switch="ngModel"
+            />Switch to Dark Mode
+          </div>
+        </div>
+
+        <div class="card-body">
+          <h4>Rajiv Mehta</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt
+            veritatis maxime quaerat vitae iusto beatae assumenda nobis
+            excepturi nostrum velit.
+          </p>
+          <button class="btn btn-primary">Profile</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

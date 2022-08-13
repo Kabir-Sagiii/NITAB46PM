@@ -1,0 +1,29 @@
+<div class="container mt-5">
+  <div class="row">
+    <div class="col">
+      <div class="card p-5">
+        <div class="row">
+          <div class="col-4">
+            <img [src]="this.productData.image" width="100%" height="100%" />
+          </div>
+          <div class="col-8">
+            <dl>
+              <dt>Product Title</dt>
+              <dd class="text-primary">{{ this.productData.title }}</dd>
+              <dt>Product Price</dt>
+              <dd class="text-primary">
+                <h5>{{ this.productData.price | currency }}</h5>
+              </dd>
+              <dt>Description</dt>
+              <dd class="text-primary">{{ this.productData.description }}</dd>
+              <dt>Category</dt>
+              <dd class="text-primary">{{ this.productData.category }}</dd>
+              <dt>Rating</dt>
+              <dd class="text-primary">{{ this.productData.rating.rate }}</dd>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

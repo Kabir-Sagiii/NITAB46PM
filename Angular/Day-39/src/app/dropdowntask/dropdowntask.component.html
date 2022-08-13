@@ -1,0 +1,22 @@
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-12 box p-5 text-center">
+      <select class="my-5" (change)="changeFont($event)">
+        <option>Select Font Size</option>
+        <option value="font1">10</option>
+        <option value="font2">20</option>
+        <option value="font3">30</option>
+      </select>
+      <select class="my-5" (change)="changeColor($event)">
+        <option>Select Font Color</option>
+        <option value="color1">Red</option>
+        <option value="color2">Blue</option>
+        <option value="color3">Green</option>
+      </select>
+
+      <h2 [class]="[fontSizeValue, fontColor]">
+        Hello Angular, You are Just Awesome
+      </h2>
+    </div>
+  </div>
+</div>

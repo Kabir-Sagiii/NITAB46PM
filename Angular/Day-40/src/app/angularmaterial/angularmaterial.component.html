@@ -1,0 +1,76 @@
+<div class="container my-5">
+  <div class="row">
+    <div class="col-4"></div>
+    <div class="col-4">
+      <button
+        mat-raised-button
+        color="accent"
+        (click)="openDialog('2000ms', '2000ms')"
+      >
+        Open Dialog
+      </button>
+    </div>
+  </div>
+</div>
+
+<div class="container my-5 text-white">
+  <mat-grid-list rowHeight="50px" cols="3">
+    <mat-grid-tile class="bg-primary" colspan="2" rowspan="2"
+      >Col 1</mat-grid-tile
+    >
+    <mat-grid-tile class="bg-secondary" rowspan="2">Col 2</mat-grid-tile>
+    <mat-grid-tile class="bg-warning">Col 3</mat-grid-tile>
+    <mat-grid-tile class="bg-danger">Col 4</mat-grid-tile>
+  </mat-grid-list>
+</div>
+
+<div class="container mt-5 text-center">
+  <button mat-button color="primary">Angular Material</button>
+
+  <button mat-raised-button color="primary">Primary</button>
+
+  <button mat-fab color="warn">
+    <mat-icon>home</mat-icon>
+  </button>
+</div>
+<div class="container my-5">
+  <div class="row">
+    <div class="col-4">
+      <mat-card>
+        <mat-card-header>
+          <mat-card-title>Angular Material</mat-card-title>
+          <mat-card-subtitle>Cards Concepts</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo
+            veritatis obcaecati, repellendus dolor totam odit earum officia
+            inventore id quam culpa vero, similique velit, corrupti tempora
+            dicta! Sapiente earum eum alias nobis, cum quidem ratione ipsam
+            mollitia voluptatem ab distinctio?
+          </p>
+        </mat-card-content>
+      </mat-card>
+    </div>
+    <div class="col-4">
+      <mat-card>
+        <mat-card-content>
+          <img
+            mat-card-image
+            src="data:image/jpeg;base64,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"
+          />
+        </mat-card-content>
+        <mat-card-content>
+          <h2>Angular</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis,
+            vero molestias voluptatem suscipit aliquam distinctio maxime quo
+            nihil nam voluptatibus, ad quidem iusto eum labore alias amet,
+            deserunt fugit illo!
+          </p>
+          <button mat-button color="primary">More Details</button>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>
+</div>
